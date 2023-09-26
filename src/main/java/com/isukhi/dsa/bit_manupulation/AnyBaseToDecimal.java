@@ -23,11 +23,14 @@ public class AnyBaseToDecimal {
 
     public int solve(int A, int B) {
         //Extract digits from a number
+        int ans = 0;
+        int placeOfDigitInNumber = 0;
         while (A > 0) {
             int lastNumber = A % 10;
-            System.out.println(lastNumber);
+            ans += (int) (lastNumber * Math.pow(B, placeOfDigitInNumber));
+            placeOfDigitInNumber += 1;
             A = A / 10;
         }
-        return 0;
+        return ans;
     }
 }
