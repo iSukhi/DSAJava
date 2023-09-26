@@ -1,7 +1,10 @@
 package com.isukhi.dsa;
 
+import com.isukhi.dsa.bit_manupulation.AnyBaseToDecimal;
+
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        AnyBaseToDecimal a = new AnyBaseToDecimal();
+        a.solve(1010,2);
     }
 }
